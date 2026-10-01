@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Plataforma da ONG Solidariedade para divulgação de projetos, voluntariado e apoio social.">
+  <title>ONG Solidariedade</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#app">Ir para o conteúdo principal</a>
+
+  <header class="site-header">
+    <div class="container nav-principal">
+      <p class="marca">ONG Solidariedade</p>
+
+      <button
+        id="menu-button"
+        class="menu-button"
+        type="button"
+        aria-expanded="false"
+        aria-controls="menu-principal"
+        aria-label="Abrir menu de navegação">
+        ☰
+      </button>
+
+      <nav aria-label="Navegação principal">
+        <ul id="menu-principal" class="menu">
+          <li><a href="#inicio" data-link>Início</a></li>
+          <li><a href="#projetos" data-link>Projetos</a></li>
+          <li><a href="#cadastro" data-link>Participe</a></li>
+        </ul>
+      </nav>
+
+      <button id="contraste-button" class="btn btn-secundario" type="button" aria-pressed="false">
+        Alto contraste
+      </button>
+    </div>
+  </header>
+
+  <main id="app" class="container" tabindex="-1"></main>
+
+  <div id="mensagens" class="sr-status" aria-live="polite"></div>
+
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-titulo" hidden>
+    <div class="modal-conteudo">
+      <h2 id="modal-titulo">Detalhes do projeto</h2>
+      <div id="modal-corpo"></div>
+      <button class="btn" type="button" data-acao="fechar-modal">Fechar</button>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 ONG Solidariedade. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>

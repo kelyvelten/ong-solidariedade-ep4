@@ -1,0 +1,24 @@
+RELATÓRIO DE BUILD — EP IV
+
+Arquivos-fonte considerados:
+- HTML: 2.009 bytes
+- CSS: 6.263 bytes
+- JavaScript (módulos): 9.533 bytes
+- Total: 17.805 bytes
+
+Arquivos de produção:
+- HTML minificado: 1.725 bytes
+- CSS minificado: 5.060 bytes
+- JavaScript agrupado/minificado: 7.323 bytes
+- Total: 14.108 bytes
+
+Reduções:
+- HTML: 14,14%
+- CSS: 19,21%
+- JavaScript: 23,18%
+- Redução total aproximada: 20,76%
+
+Observação:
+O projeto está preparado para Vite via package.json, mas neste ambiente a medição foi executada
+com o script local build.mjs, pois o pacote Vite não está instalado. O diretório dist/ é a versão
+de produção gerada e pronta para teste/deploy estático.

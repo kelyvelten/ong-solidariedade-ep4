@@ -1,0 +1,13 @@
+{
+  "name": "ong-solidariedade-ep4",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite src",
+    "build:vite": "vite build src --outDir ../dist-vite"
+  },
+  "devDependencies": {
+    "vite": "^7.0.0"
+  }
+}

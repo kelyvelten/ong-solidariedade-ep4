@@ -1,0 +1,21 @@
+OTIMIZAÇÃO DE IMAGENS — EP IV
+
+JPEG original:
+- Dimensão: 1448x1086 px
+- Tamanho: 278,960 bytes
+
+WebP 1200:
+- Dimensão: 1200x900 px
+- Tamanho: 97,816 bytes
+- Redução vs JPEG: 64.94%
+
+WebP 768:
+- Dimensão: 768x576 px
+- Tamanho: 55,016 bytes
+- Redução vs JPEG: 80.28%
+
+Implementação:
+- <picture> com WebP responsivo via srcset/sizes.
+- JPEG mantido como fallback.
+- width/height definidos para reduzir layout shift.
+- CSS global mantém max-width: 100% e height: auto.
